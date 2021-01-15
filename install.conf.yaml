@@ -1,0 +1,26 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.bashrc:
+        force: true
+    ~/.bash_aliases:
+        force: true
+    ~/.gitconfig:
+        force: true
+    ~/.gitignore_global:
+        force: true
+    ~/.gitmessage:
+        force: true
+    ~/.profile:
+        force: true
+    ~/.vim:
+        force: true
+    ~/.vimrc:
+        force: true
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
